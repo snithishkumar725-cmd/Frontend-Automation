@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Catalog</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+<h1>Course Catalog</h1>
+
+<div class="controls">
+<input type="text" id="search" placeholder="Search Courses...">
+
+<select id="category">
+<option value="All">All Categories</option>
+<option value="Web">Web Development</option>
+<option value="AI">Artificial Intelligence</option>
+<option value="Data">Data Science</option>
+<option value="Mobile">Mobile Development</option>
+</select>
+
+<button id="theme">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+</div>
+
+</header>
+
+<div class="course-container" id="courses"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

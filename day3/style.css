@@ -1,0 +1,260 @@
+
+:root {
+    --primary-color: #0B192C;   /* Royal Deep Navy */
+    --secondary-color: #1E3E62; /* Soft Navy Accent */
+    --accent-color: #D4AF37;    /* Royal Gold */
+    --accent-hover: #AA7C11;    /* Dark Gold */
+    --text-light: #FFFFFF;
+    --text-dark: #333333;
+    --bg-light: #F9F9F9;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --transition: all 0.3s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- 1. Navigation Bar (Flexbox) --- */
+.navbar {
+    background-color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    color: var(--accent-color);
+}
+
+/* --- 2. Hero Section (Flexbox) --- */
+.hero {
+    background: linear-gradient(rgba(11, 25, 44, 0.85), rgba(30, 62, 98, 0.9)), 
+                url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1470') no-repeat center center/cover;
+    color: var(--text-light);
+    padding: 6rem 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    color: #E0E0E0;
+}
+
+.btn-royal {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid var(--accent-color);
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-royal:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.1);
+}
+
+/* --- Content Wrapper for Pages --- */
+.container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    flex: 1;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+    margin: 10px auto 0;
+}
+
+/* --- 3. Features Section (CSS Grid) --- */
+.grid-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-top: 4px solid var(--primary-color);
+    padding: 2.5rem 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: var(--transition);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Hover Effect required */
+.card:hover {
+    transform: translateY(-10px);
+    border-top-color: var(--accent-color);
+    box-shadow: 0 12px 20px rgba(11, 25, 44, 0.15);
+}
+
+/* --- Generic Inner Page Layouts --- */
+.about-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.about-text { flex: 1; }
+.about-img { 
+    flex: 1; 
+    width: 100%; 
+    border-radius: 8px; 
+    border: 3px solid var(--accent-color);
+}
+
+/* Contact Form Layout */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #E0E0E0;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    font-family: inherit;
+}
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+/* --- 4. Footer --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    font-size: 0.9rem;
+}
+
+/* --- 5. Responsive Design (Media Queries) --- */
+@media (max-width: 768px) {
+    /* Navbar items appear vertically */
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* Feature cards become a single column */
+    .grid-features {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Registration Form</h2>
+
+<form id="studentForm">
+
+<input type="text" id="name" placeholder="Student Name">
+<input type="email" id="email" placeholder="Email">
+<input type="text" id="phone" placeholder="Phone Number">
+
+<select id="course">
+<option value="">Select Course</option>
+<option value="BCA">BCA</option>
+<option value="BSc CS">BSc CS</option>
+<option value="BTech">BTech</option>
+<option value="MCA">MCA</option>
+</select>
+
+<button type="submit">Register</button>
+
+</form>
+
+<h3>Registered Students</h3>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>Course</th>
+<th>Action</th>
+</tr>
+</thead>
+
+<tbody id="studentList">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
