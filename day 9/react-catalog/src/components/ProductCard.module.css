@@ -1,0 +1,189 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  transition: transform .3s, box-shadow .3s, border-color .3s;
+  animation: fadeUp .45s ease both;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 64px rgba(0,0,0,.65), 0 0 0 1px rgba(124,92,252,.3);
+  border-color: rgba(124,92,252,.28);
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 3;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.badge-sale { background: linear-gradient(135deg, #f87171, #fb923c); }
+.badge-new  { background: linear-gradient(135deg, #34d399, #059669); }
+.badge-hot  { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.badge-best { background: linear-gradient(135deg, #7c5cfc, #c084fc); }
+
+/* Discount tag */
+.discount {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 3;
+  background: rgba(248,113,113,.15);
+  border: 1px solid rgba(248,113,113,.3);
+  color: var(--danger);
+  font-size: .68rem;
+  font-weight: 800;
+  padding: 4px 9px;
+  border-radius: 8px;
+}
+
+/* Image area */
+.imgWrap {
+  position: relative;
+  background: var(--bg-card2);
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.imgWrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 55%, var(--bg-card) 100%);
+  pointer-events: none;
+}
+.emoji {
+  font-size: 5rem;
+  line-height: 1;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,.45));
+  transition: transform .35s cubic-bezier(.34,1.56,.64,1);
+  position: relative;
+  z-index: 1;
+}
+.card:hover .emoji {
+  transform: scale(1.15) rotate(-6deg);
+}
+
+/* Body */
+.body {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0;
+}
+.category {
+  font-size: .7rem;
+  color: var(--accent2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.desc {
+  font-size: .78rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Stars */
+.starsRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+.stars {
+  display: flex;
+  gap: 1px;
+}
+.star { font-size: .85rem; line-height: 1; }
+.full  { color: var(--gold); }
+.half  { color: var(--gold); opacity: .55; }
+.empty { color: #2e3345; }
+.ratingNum {
+  font-size: .8rem;
+  color: var(--muted);
+  margin-left: 3px;
+  font-weight: 600;
+}
+.reviews {
+  font-size: .74rem;
+  color: #4e5878;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.priceBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.oldPrice {
+  font-size: .74rem;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+.newPrice {
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cartBtn {
+  padding: 10px 16px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: .82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .25s;
+  font-family: 'Outfit', sans-serif;
+  box-shadow: 0 4px 16px rgba(124,92,252,.35);
+  white-space: nowrap;
+}
+.cartBtn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 28px rgba(124,92,252,.55);
+}
+.cartBtn:active { transform: scale(.96); }
+
+.cartAdded {
+  background: linear-gradient(135deg, #34d399, #059669) !important;
+  box-shadow: 0 4px 18px rgba(52,211,153,.4) !important;
+}
