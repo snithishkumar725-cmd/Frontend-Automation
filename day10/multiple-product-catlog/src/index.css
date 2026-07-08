@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+/* ===== AMAZON-STYLE DESIGN SYSTEM ===== */
+:root {
+  /* Amazon brand colors */
+  --amazon-orange: #FF9900;
+  --amazon-orange-dark: #E47911;
+  --amazon-orange-light: #FFB347;
+  --amazon-dark: #131921;
+  --amazon-dark-alt: #232F3E;
+  --amazon-blue: #007185;
+  --amazon-blue-light: #00a8cc;
+  --amazon-green: #067D62;
+  --amazon-red: #c0392b;
+  --amazon-yellow: #f0c14b;
+
+  /* Neutral palette */
+  --bg-primary: #f0f2f2;
+  --bg-white: #ffffff;
+  --bg-card: #ffffff;
+  --bg-section: #f7f8f9;
+
+  /* Text */
+  --text-primary: #0F1111;
+  --text-secondary: #565959;
+  --text-muted: #767676;
+  --text-link: #007185;
+  --text-orange: #C7511F;
+
+  /* Borders */
+  --border-light: #e3e6e6;
+  --border-card: #ddd;
+  --border-focus: #e77600;
+
+  /* Shadows */
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.18);
+  --shadow-header: 0 4px 12px rgba(0,0,0,0.35);
+  --shadow-button: 0 1px 2px rgba(0,0,0,0.2);
+
+  /* Animations */
+  --transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-family: 'Inter', 'Amazon Ember', Arial, sans-serif;
+  font-size: 14px;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-primary);
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; padding: 0; margin: 0; }
+img { display: block; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f0f2f2; }
+::-webkit-scrollbar-thumb { background: #aaa; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #888; }
