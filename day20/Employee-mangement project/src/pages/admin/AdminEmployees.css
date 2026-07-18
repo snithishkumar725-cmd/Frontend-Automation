@@ -1,0 +1,11 @@
+.admin-emp-page { display: block; }
+.emp-mgmt-filters { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+.emp-count-badge { font-size: 0.8rem; font-weight: 600; color: var(--text-muted); background: rgba(99,102,241,0.07); padding: 6px 14px; border-radius: 999px; }
+.emp-profile-header { display: flex; align-items: center; gap: 18px; margin-bottom: 18px; }
+.emp-detail-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(99,102,241,0.06); }
+.emp-detail-row:last-child { border-bottom: none; }
+.edr-icon { font-size: 1rem; flex-shrink: 0; }
+.edr-label { font-size: 0.8rem; font-weight: 600; color: var(--text-muted); width: 110px; flex-shrink: 0; }
+.edr-value { font-size: 0.875rem; font-weight: 600; color: var(--text-primary); }
+.add-emp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 20px; }
+@media (max-width: 500px) { .add-emp-grid { grid-template-columns: 1fr; } }

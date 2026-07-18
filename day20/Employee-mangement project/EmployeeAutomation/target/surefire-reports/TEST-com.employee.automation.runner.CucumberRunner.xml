@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.employee.automation.runner.CucumberRunner" time="39.667" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Employee-mangement project\EmployeeAutomation\target\test-classes;C:\Employee-mangement project\EmployeeAutomation\target\classes;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-java\4.45.0\selenium-java-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-api\4.45.0\selenium-api-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.45.0\selenium-chrome-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.45.0\selenium-chromium-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-json\4.45.0\selenium-json-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.45.0\selenium-manager-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.45.0\selenium-devtools-latest-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.45.0\selenium-devtools-v147-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.45.0\selenium-devtools-v148-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.45.0\selenium-devtools-v149-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.45.0\selenium-edge-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.45.0\selenium-firefox-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-http\4.45.0\selenium-http-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.45.0\selenium-ie-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.45.0\selenium-remote-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-api\1.63.0\opentelemetry-api-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-context\1.63.0\opentelemetry-context-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-common\1.63.0\opentelemetry-common-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.63.0\opentelemetry-exporter-logging-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.63.0\opentelemetry-sdk-common-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.63.0\opentelemetry-sdk-extension-autoconfigure-spi-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.63.0\opentelemetry-sdk-extension-autoconfigure-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.63.0\opentelemetry-sdk-trace-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.63.0\opentelemetry-sdk-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.63.0\opentelemetry-sdk-metrics-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.63.0\opentelemetry-sdk-logs-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\net\bytebuddy\byte-buddy\1.18.10\byte-buddy-1.18.10.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-os\4.45.0\selenium-os-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.45.0\selenium-safari-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-support\4.45.0\selenium-support-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.4\webdrivermanager-6.3.4.jar;C:\Users\Nithishkumar S\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\Nithishkumar S\.m2\repository\com\github\docker-java\docker-java\3.7.1\docker-java-3.7.1.jar;C:\Users\Nithishkumar S\.m2\repository\com\github\docker-java\docker-java-core\3.7.1\docker-java-core-3.7.1.jar;C:\Users\Nithishkumar S\.m2\repository\com\github\docker-java\docker-java-api\3.7.1\docker-java-api-3.7.1.jar;C:\Users\Nithishkumar S\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\Nithishkumar S\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.1\jackson-databind-2.20.1.jar;C:\Users\Nithishkumar S\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\Nithishkumar S\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Nithishkumar S\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.7.1\docker-java-transport-httpclient5-3.7.1.jar;C:\Users\Nithishkumar S\.m2\repository\com\github\docker-java\docker-java-transport\3.7.1\docker-java-transport-3.7.1.jar;C:\Users\Nithishkumar S\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\Nithishkumar S\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Nithishkumar S\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\Nithishkumar S\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\Nithishkumar S\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.6\httpclient5-5.6.jar;C:\Users\Nithishkumar S\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.4\httpcore5-5.4.jar;C:\Users\Nithishkumar S\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.4\httpcore5-h2-5.4.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-junit\7.18.0\cucumber-junit-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Nithishkumar S\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Nithishkumar S\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Nithishkumar S\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-25.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\Nithishkumar S\AppData\Local\Temp\surefire5125029279121988326\surefirebooter-20260718150746717_3.jar C:\Users\Nithishkumar S\AppData\Local\Temp\surefire5125029279121988326 2026-07-18T15-07-46_645-jvmRun1 surefire-20260718150746717_1tmp surefire_0-20260718150746717_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Employee-mangement project\EmployeeAutomation\target\test-classes;C:\Employee-mangement project\EmployeeAutomation\target\classes;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-java\4.45.0\selenium-java-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-api\4.45.0\selenium-api-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.45.0\selenium-chrome-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.45.0\selenium-chromium-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-json\4.45.0\selenium-json-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.45.0\selenium-manager-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.45.0\selenium-devtools-latest-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.45.0\selenium-devtools-v147-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.45.0\selenium-devtools-v148-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.45.0\selenium-devtools-v149-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.45.0\selenium-edge-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.45.0\selenium-firefox-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-http\4.45.0\selenium-http-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.45.0\selenium-ie-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.45.0\selenium-remote-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-api\1.63.0\opentelemetry-api-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-context\1.63.0\opentelemetry-context-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-common\1.63.0\opentelemetry-common-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.63.0\opentelemetry-exporter-logging-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.63.0\opentelemetry-sdk-common-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.63.0\opentelemetry-sdk-extension-autoconfigure-spi-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.63.0\opentelemetry-sdk-extension-autoconfigure-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.63.0\opentelemetry-sdk-trace-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.63.0\opentelemetry-sdk-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.63.0\opentelemetry-sdk-metrics-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.63.0\opentelemetry-sdk-logs-1.63.0.jar;C:\Users\Nithishkumar S\.m2\repository\net\bytebuddy\byte-buddy\1.18.10\byte-buddy-1.18.10.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-os\4.45.0\selenium-os-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.45.0\selenium-safari-driver-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\seleniumhq\selenium\selenium-support\4.45.0\selenium-support-4.45.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.4\webdrivermanager-6.3.4.jar;C:\Users\Nithishkumar S\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\Nithishkumar S\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\Nithishkumar S\.m2\repository\com\github\docker-java\docker-java\3.7.1\docker-java-3.7.1.jar;C:\Users\Nithishkumar S\.m2\repository\com\github\docker-java\docker-java-core\3.7.1\docker-java-core-3.7.1.jar;C:\Users\Nithishkumar S\.m2\repository\com\github\docker-java\docker-java-api\3.7.1\docker-java-api-3.7.1.jar;C:\Users\Nithishkumar S\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\Nithishkumar S\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.1\jackson-databind-2.20.1.jar;C:\Users\Nithishkumar S\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\Nithishkumar S\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Nithishkumar S\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.7.1\docker-java-transport-httpclient5-3.7.1.jar;C:\Users\Nithishkumar S\.m2\repository\com\github\docker-java\docker-java-transport\3.7.1\docker-java-transport-3.7.1.jar;C:\Users\Nithishkumar S\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\Nithishkumar S\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Nithishkumar S\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\Nithishkumar S\.m2\repository\commons-codec\commons-codec\1.19.0\commons-codec-1.19.0.jar;C:\Users\Nithishkumar S\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.6\httpclient5-5.6.jar;C:\Users\Nithishkumar S\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.4\httpcore5-5.4.jar;C:\Users\Nithishkumar S\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.4\httpcore5-h2-5.4.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-junit\7.18.0\cucumber-junit-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Nithishkumar S\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Nithishkumar S\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Nithishkumar S\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Nithishkumar S\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\Nithishkumar S\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Nithishkumar S"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-25.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Employee-mangement project\EmployeeAutomation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Nithishkumar S\AppData\Local\Temp\surefire5125029279121988326\surefirebooter-20260718150746717_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.2+10-LTS-69"/>
+    <property name="user.name" value="Nithishkumar S"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Nithishkumar S\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\NITHIS~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="25.0.2"/>
+    <property name="user.dir" value="C:\Employee-mangement project\EmployeeAutomation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-25.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;c:\Users\Nithishkumar S\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Nithishkumar S\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Nithishkumar S\AppData\Local\Microsoft\WindowsApps;C:\Users\Nithishkumar S\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Nithishkumar S\AppData\Roaming\npm;C:\Users\Nithishkumar S\AppData\Local\Programs\Antigravity IDE\bin;C:\Program Files\apachi\apache-maven-3.9.16\bin;c:\Users\Nithishkumar S\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.0.2+10-LTS-69"/>
+    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="Admin adds a new employee and it reflects in the Express API" classname="Add Employee via Admin Portal" time="15.583">
+    <system-out><![CDATA[
+@addEmployee @admin @smoke @api
+Scenario: Admin adds a new employee and it reflects in the Express API                         # src/test/resources/features/AddEmployee.feature:13
+  Given the application is open at "http://localhost:5173/"                                    # com.employee.automation.stepdefs.LoginStepDefs.theApplicationIsOpenAt(java.lang.String)
+  When I click the "Admin Portal" card                                                         # com.employee.automation.stepdefs.LoginStepDefs.iClickTheCard(java.lang.String)
+  Then the admin login form should appear                                                      # com.employee.automation.stepdefs.LoginStepDefs.theAdminLoginFormShouldAppear()
+  When I enter username "admin" and password "admin123"                                        # com.employee.automation.stepdefs.LoginStepDefs.iEnterUsernameAndPassword(java.lang.String,java.lang.String)
+  And I click the login button                                                                 # com.employee.automation.stepdefs.LoginStepDefs.iClickTheLoginButton()
+   ✔ Admin dashboard loaded
+  Then I should be redirected to the admin dashboard                                           # com.employee.automation.stepdefs.LoginStepDefs.iShouldBeRedirectedToTheAdminDashboard()
+  When I click the Employees nav item                                                          # com.employee.automation.stepdefs.LoginStepDefs.iClickTheEmployeesNavItem()
+   ✔ Admin Employees page loaded
+  Then the Employee Details page should be displayed                                           # com.employee.automation.stepdefs.LoginStepDefs.theEmployeeDetailsPageShouldBeDisplayed()
+  And the employee search box should be visible                                                # com.employee.automation.stepdefs.LoginStepDefs.theEmployeeSearchBoxShouldBeVisible()
+  When I click the Add Employee button                                                         # com.employee.automation.stepdefs.AddEmployeeStepDefs.iClickTheAddEmployeeButton()
+   ✔ Add Employee modal is open
+  Then the Add Employee modal should open                                                      # com.employee.automation.stepdefs.AddEmployeeStepDefs.theAddEmployeeModalShouldOpen()
+   ✔ Name: Selenium Test User
+  When I fill the employee name with "Selenium Test User"                                      # com.employee.automation.stepdefs.AddEmployeeStepDefs.iFillTheEmployeeNameWith(java.lang.String)
+   ✔ Email: selenium.test@techems.com
+  And I fill the employee email with "selenium.test@techems.com"                               # com.employee.automation.stepdefs.AddEmployeeStepDefs.iFillTheEmployeeEmailWith(java.lang.String)
+   ✔ Role: QA Automation Engineer
+  And I fill the employee role with "QA Automation Engineer"                                   # com.employee.automation.stepdefs.AddEmployeeStepDefs.iFillTheEmployeeRoleWith(java.lang.String)
+   ✔ Phone: +91 99988 77766
+  And I fill the employee phone with "+91 99988 77766"                                         # com.employee.automation.stepdefs.AddEmployeeStepDefs.iFillTheEmployeePhoneWith(java.lang.String)
+   ✔ Location: Chennai, India
+  And I fill the employee location with "Chennai, India"                                       # com.employee.automation.stepdefs.AddEmployeeStepDefs.iFillTheEmployeeLocationWith(java.lang.String)
+   ✔ Add Employee form submitted
+  And I click the submit Add Employee button                                                   # com.employee.automation.stepdefs.AddEmployeeStepDefs.iClickTheSubmitAddEmployeeButton()
+   ✔ Add Employee modal closed — form submitted successfully
+  Then the Add Employee modal should close                                                     # com.employee.automation.stepdefs.AddEmployeeStepDefs.theAddEmployeeModalShouldClose()
+   ✔ 'Selenium Test User' appears in the employee table
+  And the new employee "Selenium Test User" should appear in the employee list                 # com.employee.automation.stepdefs.AddEmployeeStepDefs.theNewEmployeeShouldAppearInTheEmployeeList(java.lang.String)
+   ✔ 'Selenium Test User' confirmed in Express API (db.json)
+   ✔ Postman → GET http://localhost:5000/api/employees → returns this employee ✅
+  And the employee should be saved to the Express API at "http://localhost:5000/api/employees" # com.employee.automation.stepdefs.AddEmployeeStepDefs.theEmployeeShouldBeSavedToTheExpressAPIAt(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Jul 18, 2026 3:07:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 150, returning the closest version; found: 149; Please update to a Selenium version that supports CDP version 150
+]]></system-err>
+  </testcase>
+  <testcase name="Admin adds a second employee and verifies both are in the list" classname="Add Employee via Admin Portal" time="12.032">
+    <system-out><![CDATA[
+@addEmployee @admin @regression
+Scenario: Admin adds a second employee and verifies both are in the list          # src/test/resources/features/AddEmployee.feature:37
+  Given the application is open at "http://localhost:5173/"                       # com.employee.automation.stepdefs.LoginStepDefs.theApplicationIsOpenAt(java.lang.String)
+  When I click the "Admin Portal" card                                            # com.employee.automation.stepdefs.LoginStepDefs.iClickTheCard(java.lang.String)
+  Then the admin login form should appear                                         # com.employee.automation.stepdefs.LoginStepDefs.theAdminLoginFormShouldAppear()
+  When I enter username "admin" and password "admin123"                           # com.employee.automation.stepdefs.LoginStepDefs.iEnterUsernameAndPassword(java.lang.String,java.lang.String)
+  And I click the login button                                                    # com.employee.automation.stepdefs.LoginStepDefs.iClickTheLoginButton()
+   ✔ Admin dashboard loaded
+  Then I should be redirected to the admin dashboard                              # com.employee.automation.stepdefs.LoginStepDefs.iShouldBeRedirectedToTheAdminDashboard()
+  When I click the Employees nav item                                             # com.employee.automation.stepdefs.LoginStepDefs.iClickTheEmployeesNavItem()
+   ✔ Admin Employees page loaded
+  Then the Employee Details page should be displayed                              # com.employee.automation.stepdefs.LoginStepDefs.theEmployeeDetailsPageShouldBeDisplayed()
+  When I click the Add Employee button                                            # com.employee.automation.stepdefs.AddEmployeeStepDefs.iClickTheAddEmployeeButton()
+   ✔ Add Employee modal is open
+  Then the Add Employee modal should open                                         # com.employee.automation.stepdefs.AddEmployeeStepDefs.theAddEmployeeModalShouldOpen()
+   ✔ Name: Integration Test User
+  When I fill the employee name with "Integration Test User"                      # com.employee.automation.stepdefs.AddEmployeeStepDefs.iFillTheEmployeeNameWith(java.lang.String)
+   ✔ Email: integration.test@techems.com
+  And I fill the employee email with "integration.test@techems.com"               # com.employee.automation.stepdefs.AddEmployeeStepDefs.iFillTheEmployeeEmailWith(java.lang.String)
+   ✔ Role: Backend Developer
+  And I fill the employee role with "Backend Developer"                           # com.employee.automation.stepdefs.AddEmployeeStepDefs.iFillTheEmployeeRoleWith(java.lang.String)
+   ✔ Phone: +91 88877 66655
+  And I fill the employee phone with "+91 88877 66655"                            # com.employee.automation.stepdefs.AddEmployeeStepDefs.iFillTheEmployeePhoneWith(java.lang.String)
+   ✔ Location: Hyderabad, India
+  And I fill the employee location with "Hyderabad, India"                        # com.employee.automation.stepdefs.AddEmployeeStepDefs.iFillTheEmployeeLocationWith(java.lang.String)
+   ✔ Add Employee form submitted
+  And I click the submit Add Employee button                                      # com.employee.automation.stepdefs.AddEmployeeStepDefs.iClickTheSubmitAddEmployeeButton()
+   ✔ Add Employee modal closed — form submitted successfully
+  Then the Add Employee modal should close                                        # com.employee.automation.stepdefs.AddEmployeeStepDefs.theAddEmployeeModalShouldClose()
+   ✔ 'Integration Test User' appears in the employee table
+  And the new employee "Integration Test User" should appear in the employee list # com.employee.automation.stepdefs.AddEmployeeStepDefs.theNewEmployeeShouldAppearInTheEmployeeList(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Jul 18, 2026 3:08:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 150, returning the closest version; found: 149; Please update to a Selenium version that supports CDP version 150
+]]></system-err>
+  </testcase>
+  <testcase name="Admin logs in and views Employee Details" classname="Employee Management System - Full Navigation Flow" time="6.255">
+    <system-out><![CDATA[
+@login @admin @smoke
+Scenario: Admin logs in and views Employee Details          # src/test/resources/features/Login.feature:13
+  Given the application is open at "http://localhost:5173/" # com.employee.automation.stepdefs.LoginStepDefs.theApplicationIsOpenAt(java.lang.String)
+  When I click the "Admin Portal" card                      # com.employee.automation.stepdefs.LoginStepDefs.iClickTheCard(java.lang.String)
+  Then the admin login form should appear                   # com.employee.automation.stepdefs.LoginStepDefs.theAdminLoginFormShouldAppear()
+  When I enter username "admin" and password "admin123"     # com.employee.automation.stepdefs.LoginStepDefs.iEnterUsernameAndPassword(java.lang.String,java.lang.String)
+  And I click the login button                              # com.employee.automation.stepdefs.LoginStepDefs.iClickTheLoginButton()
+   ✔ Admin dashboard loaded
+  Then I should be redirected to the admin dashboard        # com.employee.automation.stepdefs.LoginStepDefs.iShouldBeRedirectedToTheAdminDashboard()
+  When I click the Employees nav item                       # com.employee.automation.stepdefs.LoginStepDefs.iClickTheEmployeesNavItem()
+   ✔ Admin Employees page loaded
+  Then the Employee Details page should be displayed        # com.employee.automation.stepdefs.LoginStepDefs.theEmployeeDetailsPageShouldBeDisplayed()
+  And the employee search box should be visible             # com.employee.automation.stepdefs.LoginStepDefs.theEmployeeSearchBoxShouldBeVisible()
+  When I click view on the first employee                   # com.employee.automation.stepdefs.LoginStepDefs.iClickViewOnTheFirstEmployee()
+   ✔ Employee detail modal opened
+  Then the employee detail modal should open                # com.employee.automation.stepdefs.LoginStepDefs.theEmployeeDetailModalShouldOpen()
+]]></system-out>
+    <system-err><![CDATA[Jul 18, 2026 3:08:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 150, returning the closest version; found: 149; Please update to a Selenium version that supports CDP version 150
+]]></system-err>
+  </testcase>
+  <testcase name="Employee logs in and views their Dashboard" classname="Employee Management System - Full Navigation Flow" time="5.342">
+    <system-out><![CDATA[
+@login @employee @smoke
+Scenario: Employee logs in and views their Dashboard        # src/test/resources/features/Login.feature:28
+  Given the application is open at "http://localhost:5173/" # com.employee.automation.stepdefs.LoginStepDefs.theApplicationIsOpenAt(java.lang.String)
+  When I click the "Employee Portal" card                   # com.employee.automation.stepdefs.LoginStepDefs.iClickTheCard(java.lang.String)
+  Then the employee login form should appear                # com.employee.automation.stepdefs.LoginStepDefs.theEmployeeLoginFormShouldAppear()
+  When I enter username "asbar" and password "emp123"       # com.employee.automation.stepdefs.LoginStepDefs.iEnterUsernameAndPassword(java.lang.String,java.lang.String)
+  And I click the login button                              # com.employee.automation.stepdefs.LoginStepDefs.iClickTheLoginButton()
+   ✔ Employee dashboard loaded
+  Then I should be redirected to the employee dashboard     # com.employee.automation.stepdefs.LoginStepDefs.iShouldBeRedirectedToTheEmployeeDashboard()
+   ✔ Attendance card visible
+  And the employee attendance card should be visible        # com.employee.automation.stepdefs.LoginStepDefs.theEmployeeAttendanceCardShouldBeVisible()
+   ✔ Salary card visible
+  And the employee salary card should be visible            # com.employee.automation.stepdefs.LoginStepDefs.theEmployeeSalaryCardShouldBeVisible()
+  When I click the My Profile nav item                      # com.employee.automation.stepdefs.LoginStepDefs.iClickTheMyProfileNavItem()
+   ✔ My Profile page loaded
+  Then the profile page should be displayed                 # com.employee.automation.stepdefs.LoginStepDefs.theProfilePageShouldBeDisplayed()
+]]></system-out>
+    <system-err><![CDATA[Jul 18, 2026 3:08:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 150, returning the closest version; found: 149; Please update to a Selenium version that supports CDP version 150
+]]></system-err>
+  </testcase>
+</testsuite>

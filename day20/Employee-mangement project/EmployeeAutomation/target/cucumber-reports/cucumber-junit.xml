@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="39.28" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Add Employee via Admin Portal" name="Admin adds a new employee and it reflects in the Express API" time="15.528">
+<system-out><![CDATA[
+Given the application is open at "http://localhost:5173/"...................passed
+When I click the "Admin Portal" card........................................passed
+Then the admin login form should appear.....................................passed
+When I enter username "admin" and password "admin123".......................passed
+And I click the login button................................................passed
+Then I should be redirected to the admin dashboard..........................passed
+When I click the Employees nav item.........................................passed
+Then the Employee Details page should be displayed..........................passed
+And the employee search box should be visible...............................passed
+When I click the Add Employee button........................................passed
+Then the Add Employee modal should open.....................................passed
+When I fill the employee name with "Selenium Test User".....................passed
+And I fill the employee email with "selenium.test@techems.com"..............passed
+And I fill the employee role with "QA Automation Engineer"..................passed
+And I fill the employee phone with "+91 99988 77766"........................passed
+And I fill the employee location with "Chennai, India"......................passed
+And I click the submit Add Employee button..................................passed
+Then the Add Employee modal should close....................................passed
+And the new employee "Selenium Test User" should appear in the employee list.passed
+And the employee should be saved to the Express API at "http://localhost:5000/api/employees".passed
+]]></system-out>
+</testcase>
+<testcase classname="Add Employee via Admin Portal" name="Admin adds a second employee and verifies both are in the list" time="12.031">
+<system-out><![CDATA[
+Given the application is open at "http://localhost:5173/"...................passed
+When I click the "Admin Portal" card........................................passed
+Then the admin login form should appear.....................................passed
+When I enter username "admin" and password "admin123".......................passed
+And I click the login button................................................passed
+Then I should be redirected to the admin dashboard..........................passed
+When I click the Employees nav item.........................................passed
+Then the Employee Details page should be displayed..........................passed
+When I click the Add Employee button........................................passed
+Then the Add Employee modal should open.....................................passed
+When I fill the employee name with "Integration Test User"..................passed
+And I fill the employee email with "integration.test@techems.com"...........passed
+And I fill the employee role with "Backend Developer".......................passed
+And I fill the employee phone with "+91 88877 66655"........................passed
+And I fill the employee location with "Hyderabad, India"....................passed
+And I click the submit Add Employee button..................................passed
+Then the Add Employee modal should close....................................passed
+And the new employee "Integration Test User" should appear in the employee list.passed
+]]></system-out>
+</testcase>
+<testcase classname="Employee Management System - Full Navigation Flow" name="Admin logs in and views Employee Details" time="6.253">
+<system-out><![CDATA[
+Given the application is open at "http://localhost:5173/"...................passed
+When I click the "Admin Portal" card........................................passed
+Then the admin login form should appear.....................................passed
+When I enter username "admin" and password "admin123".......................passed
+And I click the login button................................................passed
+Then I should be redirected to the admin dashboard..........................passed
+When I click the Employees nav item.........................................passed
+Then the Employee Details page should be displayed..........................passed
+And the employee search box should be visible...............................passed
+When I click view on the first employee.....................................passed
+Then the employee detail modal should open..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Employee Management System - Full Navigation Flow" name="Employee logs in and views their Dashboard" time="5.339">
+<system-out><![CDATA[
+Given the application is open at "http://localhost:5173/"...................passed
+When I click the "Employee Portal" card.....................................passed
+Then the employee login form should appear..................................passed
+When I enter username "asbar" and password "emp123".........................passed
+And I click the login button................................................passed
+Then I should be redirected to the employee dashboard.......................passed
+And the employee attendance card should be visible..........................passed
+And the employee salary card should be visible..............................passed
+When I click the My Profile nav item........................................passed
+Then the profile page should be displayed...................................passed
+]]></system-out>
+</testcase>
+</testsuite>

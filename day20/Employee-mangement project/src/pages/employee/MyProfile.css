@@ -1,0 +1,59 @@
+.my-profile-page { display: block; }
+.profile-layout { display: grid; grid-template-columns: 300px 1fr; gap: 22px; }
+
+/* Hero Card */
+.profile-hero-card {
+  background: var(--glass); backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border); border-radius: var(--radius-xl);
+  padding: 28px 22px; box-shadow: var(--glass-shadow);
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  text-align: center; position: relative; overflow: hidden;
+}
+.profile-hero-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 80px;
+  background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(244,63,94,0.08));
+}
+.profile-avatar { position: relative; z-index: 1; }
+.profile-name { font-size: 1.3rem; font-weight: 800; font-family: 'Outfit', sans-serif; color: var(--text-primary); }
+.profile-role { font-size: 0.82rem; color: var(--text-muted); }
+.profile-chips { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+
+.profile-stat-row { display: flex; align-items: center; gap: 0; width: 100%; background: rgba(99,102,241,0.05); border-radius: var(--radius-md); padding: 12px 0; }
+.psr-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.psr-value { font-size: 1.2rem; font-weight: 800; font-family: 'Outfit', sans-serif; color: var(--text-primary); }
+.psr-label { font-size: 0.68rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+.psr-divider { width: 1px; height: 32px; background: rgba(99,102,241,0.15); }
+
+.profile-salary { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 12px 14px; background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(79,70,229,0.06)); border-radius: var(--radius-md); border: 1px solid rgba(99,102,241,0.15); }
+.profile-salary span { font-size: 0.78rem; color: var(--text-muted); }
+.profile-salary strong { font-size: 1rem; font-weight: 800; color: #4f46e5; }
+
+/* Details Card */
+.profile-details-card {
+  background: var(--glass); backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border); border-radius: var(--radius-xl);
+  padding: 24px 28px; box-shadow: var(--glass-shadow);
+  display: flex; flex-direction: column; gap: 20px;
+}
+.pdc-header { display: flex; align-items: center; justify-content: space-between; }
+.pdc-header h3 { font-size: 1rem; font-weight: 700; font-family: 'Outfit', sans-serif; }
+
+.profile-info-grid { display: flex; flex-direction: column; gap: 4px; }
+.pig-row { display: flex; align-items: flex-start; gap: 14px; padding: 12px 0; border-bottom: 1px solid rgba(99,102,241,0.06); }
+.pig-row:last-child { border-bottom: none; }
+.pig-icon { font-size: 1.1rem; flex-shrink: 0; padding-top: 2px; }
+.pig-content { flex: 1; display: flex; flex-direction: column; gap: 3px; }
+.pig-label { font-size: 0.72rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.pig-value { font-size: 0.875rem; font-weight: 600; color: var(--text-primary); }
+
+/* Performance */
+.pdc-perf { background: rgba(99,102,241,0.05); border-radius: var(--radius-md); padding: 18px; border: 1px solid rgba(99,102,241,0.1); }
+.pdc-perf h4 { font-size: 0.875rem; font-weight: 700; font-family: 'Outfit', sans-serif; margin-bottom: 14px; }
+.perf-display { display: flex; align-items: center; gap: 20px; }
+.perf-score-big { font-size: 2.5rem; font-weight: 900; font-family: 'Outfit', sans-serif; color: #4f46e5; flex-shrink: 0; }
+.perf-bar-section { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.perf-category { font-size: 0.82rem; font-weight: 700; color: var(--text-secondary); }
+
+.success-banner { padding: 14px 20px; background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); border-radius: var(--radius-md); color: #059669; font-weight: 600; font-size: 0.875rem; margin-bottom: 16px; }
+
+@media (max-width: 800px) { .profile-layout { grid-template-columns: 1fr; } }

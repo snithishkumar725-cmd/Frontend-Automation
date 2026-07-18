@@ -1,0 +1,75 @@
+.my-att-page { display: block; }
+.att-summary-cards { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
+.att-sum-card {
+  flex: 1; min-width: 100px;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  padding: 16px 12px;
+  border-radius: var(--radius-lg);
+  border: 1.5px solid transparent;
+  transition: var(--transition);
+}
+.att-sum-card:hover { transform: translateY(-2px); }
+.asc-success { background: rgba(16,185,129,0.08);  border-color: rgba(16,185,129,0.2);  }
+.asc-danger  { background: rgba(244,63,94,0.08);   border-color: rgba(244,63,94,0.2);   }
+.asc-warning { background: rgba(245,158,11,0.08);  border-color: rgba(245,158,11,0.2);  }
+.asc-purple  { background: rgba(139,92,246,0.08);  border-color: rgba(139,92,246,0.2);  }
+.asc-primary { background: rgba(99,102,241,0.08);  border-color: rgba(99,102,241,0.2);  }
+.asc-icon { font-size: 1.3rem; }
+.asc-value { font-size: 1.5rem; font-weight: 900; font-family: 'Outfit', sans-serif; color: var(--text-primary); }
+.asc-label { font-size: 0.72rem; font-weight: 600; color: var(--text-muted); text-align: center; }
+
+.att-main-grid { display: grid; grid-template-columns: 1fr 380px; gap: 20px; }
+.att-cal-card {
+  background: var(--glass); backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border); border-radius: var(--radius-lg);
+  padding: 22px; box-shadow: var(--glass-shadow);
+}
+.att-cal-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.att-cal-nav h2 { font-size: 1rem; font-weight: 700; font-family: 'Outfit', sans-serif; color: var(--text-primary); }
+.att-legend-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 14px; }
+.al-item { display: flex; align-items: center; gap: 5px; font-size: 0.72rem; font-weight: 600; color: var(--text-muted); }
+.al-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+.my-cal-weekdays { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; margin-bottom: 4px; }
+.my-cal-wd { text-align: center; font-size: 0.7rem; font-weight: 700; color: var(--text-muted); padding: 4px 0; }
+.my-cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.my-cal-cell {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  border: 1.5px solid transparent;
+  position: relative; cursor: default;
+  transition: var(--transition-fast);
+  gap: 1px;
+}
+.my-cal-cell.empty { background: transparent; border: none; }
+.my-cal-cell:not(.empty):not(.is-future):not(.is-weekend) { background: rgba(99,102,241,0.04); border-color: rgba(99,102,241,0.08); }
+.my-cal-cell.is-weekend { background: rgba(0,0,0,0.02); }
+.my-cal-cell.is-future { opacity: 0.3; }
+.my-cal-cell.is-today { outline: 2px solid #6366f1; outline-offset: -1px; }
+.my-cal-day { font-size: 0.72rem; font-weight: 700; color: var(--text-secondary); }
+.is-today .my-cal-day { color: #6366f1; }
+.my-cal-emoji { font-size: 0.75rem; line-height: 1; }
+.my-cal-today-dot { position: absolute; bottom: 3px; width: 4px; height: 4px; background: #6366f1; border-radius: 50%; }
+
+/* Events */
+.att-events-card {
+  background: var(--glass); backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border); border-radius: var(--radius-lg);
+  padding: 20px; box-shadow: var(--glass-shadow);
+  display: flex; flex-direction: column;
+  max-height: 560px;
+}
+.events-title { font-size: 0.95rem; font-weight: 700; font-family: 'Outfit', sans-serif; margin-bottom: 16px; }
+.events-list { overflow-y: auto; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.event-row { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 10px; background: rgba(99,102,241,0.03); border: 1px solid rgba(99,102,241,0.06); }
+.er-date { display: flex; flex-direction: column; align-items: center; width: 32px; }
+.er-day { font-size: 1rem; font-weight: 800; font-family: 'Outfit', sans-serif; color: var(--text-primary); line-height: 1; }
+.er-month { font-size: 0.62rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; }
+.er-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.er-content { flex: 1; display: flex; flex-direction: column; }
+.er-status { font-size: 0.82rem; font-weight: 700; }
+.er-weekday { font-size: 0.68rem; color: var(--text-muted); }
+.er-badge { font-size: 0.68rem; font-weight: 700; padding: 3px 8px; border-radius: 999px; white-space: nowrap; }
+
+@media (max-width: 900px) { .att-main-grid { grid-template-columns: 1fr; } }

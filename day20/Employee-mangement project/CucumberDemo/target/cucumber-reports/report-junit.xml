@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="15.504" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="TechEMS Employee Management - Full Navigation Flow" name="Admin logs in and navigates to Employee Details" time="7.617">
+<system-out><![CDATA[
+Given I open the TechEMS application........................................passed
+When I select the Admin Portal..............................................passed
+And I enter admin username "admin" and password "admin123"..................passed
+And I click Sign In.........................................................passed
+Then I should land on the Admin Dashboard...................................passed
+When I navigate to the Employees page.......................................passed
+Then the Employee Details page should load..................................passed
+And the employee search bar should be visible...............................passed
+When I open the first employee details......................................passed
+Then the employee detail modal should appear................................passed
+]]></system-out>
+</testcase>
+<testcase classname="TechEMS Employee Management - Full Navigation Flow" name="Employee logs in and browses their Dashboard and Profile" time="7.767">
+<system-out><![CDATA[
+Given I open the TechEMS application........................................passed
+When I select the Employee Portal...........................................passed
+And I enter employee username "asbar" and password "emp123".................passed
+And I click Sign In.........................................................passed
+Then I should land on the Employee Dashboard................................passed
+And the attendance summary card should be visible...........................passed
+And the salary info card should be visible..................................passed
+When I navigate to My Profile...............................................passed
+Then the profile details page should load...................................passed
+]]></system-out>
+</testcase>
+</testsuite>

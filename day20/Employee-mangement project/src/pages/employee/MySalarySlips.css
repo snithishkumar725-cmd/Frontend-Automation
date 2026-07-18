@@ -1,0 +1,42 @@
+.salary-slips-page { display: block; }
+.slips-layout { display: grid; grid-template-columns: 300px 1fr; gap: 20px; min-height: 60vh; }
+.slips-list-col { display: flex; flex-direction: column; gap: 10px; }
+.slips-list-title { font-size: 0.9rem; font-weight: 700; font-family: 'Outfit', sans-serif; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+.slip-list-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px;
+  background: var(--glass); backdrop-filter: blur(20px);
+  border: 2px solid transparent; border-radius: var(--radius-md);
+  cursor: pointer; transition: all 0.25s ease;
+  box-shadow: var(--glass-shadow);
+}
+.slip-list-item:hover { border-color: rgba(99,102,241,0.3); transform: translateX(2px); }
+.slip-list-item.selected { border-color: #6366f1; background: rgba(99,102,241,0.07); }
+.sli-left { display: flex; align-items: center; gap: 10px; }
+.sli-icon { font-size: 1.3rem; }
+.sli-month { font-size: 0.82rem; font-weight: 700; color: var(--text-primary); }
+.sli-net { font-size: 0.875rem; font-weight: 800; color: #4f46e5; }
+.sli-right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.sli-download { font-size: 1rem; cursor: pointer; padding: 4px; border-radius: 6px; transition: var(--transition-fast); }
+.sli-download:hover { background: rgba(99,102,241,0.1); }
+
+.slip-preview-col {
+  background: var(--glass); backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border); border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+  overflow: hidden; display: flex; flex-direction: column;
+}
+.slip-preview-card { display: flex; flex-direction: column; height: 100%; }
+.spc-actions { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid rgba(99,102,241,0.08); }
+.spc-actions h3 { font-size: 0.875rem; font-weight: 700; color: var(--text-secondary); }
+.printable-slip { padding: 28px 32px; overflow-y: auto; flex: 1; }
+
+@media (max-width: 800px) { .slips-layout { grid-template-columns: 1fr; } }
+
+@media print {
+  .salary-slips-page .no-print, .salary-slips-page .slips-list-col, .portal-sidebar, .portal-topbar { display: none !important; }
+  .portal-main { margin-left: 0 !important; }
+  .slip-preview-col { border: none; box-shadow: none; background: white; }
+  .printable-slip { padding: 20px; }
+  body { background: white !important; }
+}

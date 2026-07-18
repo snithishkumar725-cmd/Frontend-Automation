@@ -1,0 +1,21 @@
+.reports-page { display: block; }
+.reports-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.report-table-wrap { overflow-x: auto; }
+.dept-report-list { display: flex; flex-direction: column; gap: 12px; }
+.dept-report-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(99,102,241,0.06); }
+.drr-left { display: flex; flex-direction: column; }
+.drr-name { font-size: 0.875rem; font-weight: 700; color: var(--text-primary); }
+.drr-count { font-size: 0.72rem; color: var(--text-muted); }
+.drr-right { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.drr-payroll { font-size: 0.85rem; font-weight: 800; color: #4f46e5; }
+.drr-total { display: flex; justify-content: space-between; padding-top: 12px; margin-top: 4px; border-top: 2px solid rgba(99,102,241,0.1); }
+.drr-total span { font-size: 0.875rem; font-weight: 700; color: var(--text-secondary); }
+.drr-total strong { font-size: 1rem; font-weight: 900; color: var(--text-primary); }
+.leave-report-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.lrs-item { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 14px; border-radius: 12px; }
+.lrs-num { font-size: 1.5rem; font-weight: 900; font-family: 'Outfit', sans-serif; }
+.lrs-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+.lrs-pending  { background: rgba(245,158,11,0.1); color: #d97706; }
+.lrs-approved { background: rgba(16,185,129,0.1);  color: #059669; }
+.lrs-rejected { background: rgba(244,63,94,0.1);   color: #e11d48; }
+@media (max-width: 900px) { .reports-grid { grid-template-columns: 1fr; } }
